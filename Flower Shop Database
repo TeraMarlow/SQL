@@ -1,0 +1,26 @@
+--Create a flower shop database.
+
+CREATE TABLE flowers (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, color TEXT, season TEXT);
+
+
+INSERT INTO flowers VALUES (1, "Peony", "25", "5","pink" , "spring");
+INSERT INTO flowers VALUES (2, "Rose", "10", "2", "red", "summer");
+INSERT INTO flowers VALUES (3, "Daffodil", "15", "10","yellow", "spring");
+INSERT INTO flowers VALUES (4, "Violet","12","3", "purple", "spring");
+INSERT INTO flowers VALUES (5, "Goldenrod", "3", "1", "yellow", "summer");
+INSERT INTO flowers VALUES (6, "Iris", "9", "6", "purple", "summer");
+INSERT INTO flowers VALUES (7, "Lily", "17", "4", "orange", "summer");
+INSERT INTO flowers VALUES (8, "Tulip", "8", "4", "red", "summer");
+INSERT INTO flowers VALUES (9, "Primrose", "3", "34", "purple", "spring");
+INSERT INTO flowers VALUES (10, "Passion flower", "14", "33", "purple", "summer");
+INSERT INTO flowers VALUES (11, "Sunflower", "10", "17", "yellow", "summer");
+INSERT INTO flowers VALUES (12, "Zennia", "50", "2", "Assorted", "summer");
+INSERT INTO flowers VALUES (13, "Dandilion", "101", "1", "yellow", "spring");
+INSERT INTO flowers VALUES (14, "Statice", "67", "2", "purple", "summer");
+INSERT INTO flowers VALUES (15, "Hollyhock", "5", "19", "pink", "summer");
+ SELECT SUM(quantity) FROM flowers;
+ 
+--display order by quantity of item. 
+ SELECT*FROM flowers ORDER BY quantity;
+ 
+
